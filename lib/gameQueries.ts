@@ -11,3 +11,15 @@ export async function getData(params: string) {
     take: 100,
   });
 }
+
+export async function getCategoryMenu() {
+  return prisma.category.findMany({
+    include: {
+      games: true,
+    },
+  });
+}
+
+export async function getGameCategories() {
+  return prisma.category.findMany({});
+}
