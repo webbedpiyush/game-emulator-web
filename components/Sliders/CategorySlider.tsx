@@ -35,10 +35,10 @@ export default function CategorySlider({
   return (
     <div className="mb-6">
       <div className="flex justify-between gap-4">
-        <h2 className="font-sans mb-4">Categories</h2>
+        <h2 className="font-sans mb-4 font-bold">Categories</h2>
         <a
           href={`/category`}
-          className="text-sm font-medium hover:underline underline-offset-4"
+          className="text-sm font-medium hover:underline underline-offset-4 text-accent"
         >
           View All{" "}
           <ChevronRightIcon className="w-4 h-4 text-accent inline-block" />

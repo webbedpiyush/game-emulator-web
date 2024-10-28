@@ -69,7 +69,7 @@ export default function SidebarNav({
                   : "hover:bg-primary"
               }`}
             >
-              <img src="icons/arcade.jpg" className="h-6 w-8" />
+              <img src="/icons/arcade.jpg" className="h-6 w-8" />
               {item.title}{" "}
               <span className="text-accent">{`(${item?.games?.length})`}</span>
             </a>
