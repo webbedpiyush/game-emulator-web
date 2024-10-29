@@ -1,6 +1,14 @@
 import GameEmulator from "@/components/GameEmulator";
 import { getGameBySlug } from "@/lib/gameQueries";
 
+export async function generateMetadata({ params }: { params: Params }) {
+  const game = await getGameBySlug(params.slug);
+
+  const title = `${game?.title} | game-emulator` || "game-emulator";
+
+  return { title };
+}
+
 interface Params {
   slug: string;
 }
